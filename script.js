@@ -22,6 +22,7 @@ const favouriteThings = [
         let trackStatus = localStorage.getItem("trackPlayed");
         if (!trackStatus) {
           let sound = new Audio("sophie.mp3");
+          sound.volume = 0.5;
           sound.play();
           localStorage.setItem("trackPlayed", "true");
         }
