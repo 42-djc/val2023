@@ -15,6 +15,12 @@ const favouriteThings = [
     const favouriteThingsDiv = document.querySelector("#favourite-things");
     
     generateButton.addEventListener("click", function() {
+        let trackStatus = localStorage.getItem("trackPlayed");
+        if (!trackStatus) {
+          let sound = new Audio("sophie.mp3");
+          sound.play();
+          localStorage.setItem("trackPlayed", "true");
+        }
     generateButton.innerHTML = "❤️❤️❤️";
     let favouriteThingsHTML = "";
     let usedIndexes = [];
