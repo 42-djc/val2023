@@ -13,6 +13,10 @@ const favouriteThings = [
     ];
     const generateButton = document.querySelector("#generate-button");
     const favouriteThingsDiv = document.querySelector("#favourite-things");
+
+    window.onload = function(){
+        localStorage.clear()
+    }
     
     generateButton.addEventListener("click", function() {
         let trackStatus = localStorage.getItem("trackPlayed");

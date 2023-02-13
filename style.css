@@ -17,14 +17,14 @@ body {
     h1 {
     font-size: 52px;
     margin-bottom: 25px;
-    color: #663399;
+    color: #2f1b43;
     
     }
 
     h3 {
         font-size: 36px;
         margin-bottom: 12px;
-        color: #663399;
+        color: #3c2157;
         padding-top: 20px;
         
         }
@@ -39,7 +39,7 @@ body {
     font-size: 30px;
     line-height: 1.5;
     margin-bottom: 25px;
-    color: #663399;
+    color: #3c2157;
     }
     
 button {
